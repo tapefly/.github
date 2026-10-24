@@ -1,25 +1,29 @@
-# Security Policy
+# TapeFly Security Policy
 
-## Reporting a vulnerability
+## Report privately
 
-Report privately, not in a public issue. Open a draft security advisory on the
-affected repository — for the Fruit Fly World app and contracts that is
-[fruitflyworld/fruit-fly-world](https://github.com/fruitflyworld/fruit-fly-world/security/advisories/new) —
-or contact a maintainer directly on GitHub.
+Do not open a public issue for a vulnerability. Use GitHub private vulnerability
+reporting on the affected repository:
 
-Please include what you did, what happened, and what you expected. A proof of
-concept or a reproduction against a deployed address or a live host helps more
-than a description.
+https://github.com/tapefly/tapefly/security/advisories/new
 
-We will acknowledge the report, tell you whether we agree it is a finding, and
-say what we intend to do. We will credit you in the advisory unless you would
-rather we did not.
+Include the affected commit or URL, reproduction steps, expected and actual
+behavior, and whether wallet funds, private data or public history are at risk.
 
 ## Scope
 
-The Passport is deployed on **Ethereum Sepolia**, a test network. There is no
-mainnet deployment. Findings against the testnet contract are still worth
-reporting — the same source is what would be deployed.
+In scope:
 
-Each repository's own `SECURITY.md`, where it has one, is more specific than
-this file and takes precedence.
+- the TapeFly Next.js application and API;
+- deterministic simulation, compilation and replay code;
+- transaction construction and on-chain verification;
+- committed ledgers and proof artifacts.
+
+Out of scope:
+
+- TapeOut contracts, BNB Chain, X Layer and wallet providers;
+- third-party infrastructure;
+- denial-of-service or social-engineering attacks against other services.
+
+Never test against another user's funds, publish personal information, or disclose
+an exploitable finding before a fix has been coordinated.

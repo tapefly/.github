@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: TapeFly main repository
+    url: https://github.com/tapefly/tapefly/issues
+    about: Product bugs, brain submissions and feature proposals
+  - name: TapeFly security
+    url: https://github.com/tapefly/tapefly/security/advisories/new
+    about: Report a vulnerability privately
